@@ -72,7 +72,7 @@ dependencies {
 
     implementation("org.reflections:reflections:0.9.12")
 
-    runtimeOnly("org.junit.vintage:junit-vintage-engine")
+    runtimeOnly("org.junit.vintage:junit-vintage-engine:$jUnitVersion")
     File("lib")
         .takeIf { it.exists() }
         ?.takeIf { it.isDirectory }
